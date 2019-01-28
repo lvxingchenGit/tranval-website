@@ -1,0 +1,97 @@
+*{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+}
+/* 图片 */
+#swiper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow:hidden;
+        font-size: 0px;
+}
+#swiper .img-box{
+        position: absolute;
+        top:0px;
+        left:0px;
+        /* width:2600px;
+        height:280px; */
+}
+#swiper .img-box li{
+        display: inline-block;
+}
+#swiper .img-box li img{
+        width:100%;
+        height:100%;
+}
+/* 箭头区域 */
+#swiper .btn{
+        position: absolute;
+        top:50%;
+        width:100%;  
+        display: none;
+        cursor: pointer;
+}
+#swiper .btn .prev{
+        position: absolute;
+        width:40px;
+        height:60px;
+        background: rgba(211, 211, 211, 0.8);
+        margin-top: -30px;
+}
+#swiper .btn .prev span{
+        width:39px;
+        height:45px;
+        background-image:url(img/taobao.png);
+        background-position: 210px 22px; 
+        display: inline-block;
+        color:rgb(10, 10, 10);
+        margin-top: -3px;
+}
+#swiper .btn .next{
+        position: absolute;
+        right:0px;
+        width:40px;
+        height:60px;
+        background: rgba(211, 211, 211,0.8);
+        margin-top: -30px;
+}
+#swiper .btn .next span{
+        position: absolute;
+        right:10px;
+        top:50%;
+        width:17px;
+        height:28px;
+        margin-top: -11px;
+        background-image:url(img/taobao.png);
+        background-position: 200px -23px; 
+        display: inline-block;
+        color:rgb(10, 10, 10);
+}
+/* 下边小圆点 */
+#swiper .bottom{
+        position: absolute;
+        bottom: 10px;
+        width:100%;
+        text-align: center;
+}
+#swiper .bottom ul{
+        display: inline-block;
+        border-radius: 10px;
+        background: rgba(185, 185, 185, 0.8);
+}
+#swiper .bottom li{
+        width:10px;
+        height:10px;
+        background: rgb(255, 255, 255);
+        display: inline-block;
+        margin:5px;
+        border-radius: 50%;
+        cursor: pointer;
+}
+#swiper .bottom .active{
+        background: rgb(251, 255, 1);
+}
+
+
